@@ -1,0 +1,38 @@
+.cell {
+  aspect-ratio: 1;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.cell:hover:not(.occupied) {
+
+  background: #f0f8ff;
+  transform: scale(1.05);
+}
+
+.cell.occupied {
+  cursor: default;
+  background: #f9f9f9;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .cell {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cell {
+    font-size: 1.2rem;
+  }
+}
