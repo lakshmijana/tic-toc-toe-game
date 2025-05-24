@@ -1,12 +1,44 @@
-# React + Vite
+🛠 Tech Stack
+React (Functional Components & Hooks)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+JavaScript
 
-Currently, two official plugins are available:
+CSS for styling
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+😃 Emoji Categories
+🐶 Animals
 
-## Expanding the ESLint configuration
+🍎 Food
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚽ Sports
+
+🚗 Vehicles
+
+🎵 Music
+
+🪄 “Vanishing” Feature Implementation
+When players select a matching pair of emojis:
+
+A setTimeout is triggered to briefly show the pair
+
+Then their visibility is toggled using conditional rendering (isMatched state)
+
+Matched emoji cards are removed from the board by not rendering them
+
+Example logic:
+
+jsx
+Copy
+Edit
+{!card.isMatched && (
+  <div className="emoji-card">{card.emoji}</div>
+)}
+🧠 If I Had More Time...
+Add sound effects and animations
+
+Improve responsive design and accessibility
+
+Implement a scoring system with a timer
+
+Add difficulty levels or multiplayer mode
+
