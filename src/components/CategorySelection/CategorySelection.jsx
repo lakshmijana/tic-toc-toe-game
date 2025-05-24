@@ -11,7 +11,8 @@ const CategorySelection = ({
 }) => {
   return (
     <div className="category-selection">
-      <h2>Select Emoji Categories</h2>
+     
+      <h2 style={{color:"orange"}}>Emoji Clash</h2>
       
       <div className="player-selection">
         <div className="player-category">
