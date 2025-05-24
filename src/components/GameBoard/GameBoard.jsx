@@ -21,10 +21,10 @@ const GameBoard = ({
       <div className="game-header">
         <div className="player-info">
           <div className={`player-indicator ${currentPlayer === 1 ? 'active' : ''}`}>
-            Player 1: {player1Category && emojiCategories[player1Category][0]} ({player1Emojis.length}/3)
+            Player 1: {player1Category && emojiCategories[player1Category][0]} 
           </div>
           <div className={`player-indicator ${currentPlayer === 2 ? 'active' : ''}`}>
-            Player 2: {player2Category && emojiCategories[player2Category][0]} ({player2Emojis.length}/3)
+            Player 2: {player2Category && emojiCategories[player2Category][0]} 
           </div>
         </div>
       </div>

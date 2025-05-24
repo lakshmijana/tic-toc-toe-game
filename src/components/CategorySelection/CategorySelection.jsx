@@ -53,6 +53,7 @@ const CategorySelection = ({
         className="start-btn"
         onClick={onStartGame}
         disabled={!player1Category || !player2Category}
+       
       >
         Start Game
       </button>
